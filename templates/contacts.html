@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <h1 class="mb-4">Контакти</h1>
+
+        <section id="contact-info" class="mb-4">
+            <h2>Мої контакти</h2>
+            <ul class="list-unstyled">
+                <li>📧 Email: nika@example.com</li>
+                <li>📱 Телефон: +380 XX XXX XX XX</li>
+                <li>📍 Місто: Івано-Франківськ</li>
+            </ul>
+        </section>
+
+        <section id="contact-form">
+            <h2>Написати мені</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ваше ім'я</label>
+                    <input type="text" class="form-control" id="name" placeholder="Введіть ім'я">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Введіть email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Повідомлення</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Введіть повідомлення"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Надіслати</button>
+            </form>
+        </section>
+    </div>
+</div>
+{% endblock %}

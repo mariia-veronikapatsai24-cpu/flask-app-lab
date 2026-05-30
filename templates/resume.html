@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4 text-center mb-4">
+        <img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Фото" class="profile-photo rounded-circle">
+        <h1 class="mt-3">Вероніка Пацай</h1>
+        <p class="text-muted">Python розробник</p>
+    </div>
+
+    <div class="col-md-8">
+        <section id="about" class="mb-4">
+            <h2>Про себе</h2>
+            <p>Студент, захоплююся програмуванням на Python та веб-розробкою. Вивчаю Flask та сучасні веб-технології.</p>
+        </section>
+
+        <section id="education" class="mb-4">
+            <h2>Освіта</h2>
+            <p><strong>Прикарпатський національний університет</strong><br>
+            Спеціальність: Комп'ютерні науки</p>
+        </section>
+
+        <section id="skills" class="mb-4">
+            <h2>Навички</h2>
+            <ul>
+                <li>Програмування на Python</li>
+                <li>Програмування на Java</li>
+            </ul>
+        </section>
+
+        <section id="technologies" class="mb-4">
+            <h2>Технології</h2>
+            <span class="badge bg-primary me-1">Flask</span>
+            <span class="badge bg-secondary me-1">Python</span>
+            <span class="badge bg-success me-1">Java</span>
+            <span class="badge bg-info me-1">HTML/CSS</span>
+        </section>
+
+        <section id="experience" class="mb-4">
+            <h2>Досвід роботи</h2>
+            <p class="text-muted">Досвід роботи відсутній. Відкритий до стажування.</p>
+        </section>
+    </div>
+</div>
+{% endblock %}
